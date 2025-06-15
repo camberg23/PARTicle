@@ -50,7 +50,7 @@ Compressed version:"""
             
             # Call OpenAI API
             response = oai.chat.completions.create(
-                model="gpt-4-turbo-preview",
+                model="gpt-4.1",
                 messages=[
                     {"role": "system", "content": "You are an expert editor who specializes in compressing articles while maintaining their essence and readability."},
                     {"role": "user", "content": prompt}
