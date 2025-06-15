@@ -63,6 +63,7 @@ Compressed version:"""
             )
             
             compressed_text = response.choices[0].message.content
+            compressed_text = compressed_text.replace('$', '\\$')  # Add this line
             
             # Display results
             st.success("Article compressed successfully!")
