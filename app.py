@@ -9,7 +9,7 @@ oai = OpenAI(api_key=API_KEY)
 
 st.title("PARTicles")
 st.header("Article Compression Tool")
-st.markdown("*Compress articles to your preferred reading length*")
+st.markdown("*Compress articles to your preferred reading length. Idea by Steven Glass.*")
 
 # Article input
 article_text = st.text_area(
