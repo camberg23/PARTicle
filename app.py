@@ -1,11 +1,14 @@
 import streamlit as st
 from openai import OpenAI
 
+st.set_page_config(page_title="PARTicles", page_icon="📰")
+
 API_KEY = st.secrets['API_KEY']
 # Assume API_KEY is already defined
 oai = OpenAI(api_key=API_KEY)
 
-st.title("PARTicles - Article Compression Tool")
+st.title("PARTicles")
+st.write("Article Compression Tool")
 st.markdown("*Compress articles to your preferred reading length*")
 
 # Article input
