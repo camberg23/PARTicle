@@ -8,7 +8,7 @@ API_KEY = st.secrets['API_KEY']
 oai = OpenAI(api_key=API_KEY)
 
 st.title("PARTicles")
-st.write("Article Compression Tool")
+st.header("Article Compression Tool")
 st.markdown("*Compress articles to your preferred reading length*")
 
 # Article input
